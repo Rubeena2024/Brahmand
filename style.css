@@ -206,3 +206,48 @@ span:nth-child(10) {
     animation-duration: 2.75s;
 }
 
+
+    h1{
+        text-align: center;
+    padding: 200px;
+    /* position: absolute; */
+    font-size: 200px;
+    color: rgb(247, 247, 255);
+    text-shadow: 5px 5px rgb(195, 183, 183);
+    background-color: transparent;
+     
+    }
+    
+
+
+    
+
+
+.heading{ display: inline-block;}
+
+.head { 
+   
+   
+    z-index: 0;
+     /* z-index: -3; */
+    font-size: 500%;
+    color: white;
+    letter-spacing: 4px;
+    font-family:'Times New Roman', Times, serif ;
+    /* border-right: solid; */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.9s  ;
+    cursor:4s step-end infinite alternate;    
+}
+
+
+ 
+@keyframes cursor{
+    50%{ border-color: transparent}
+}
+@keyframes typing {
+    from{ width: 0}
+}
+
