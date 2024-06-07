@@ -1,1 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+.navbar ul {
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+}
+
+.navbar li
+{
+list-style: none;
+margin-top: 12.5px;
+}
+
+
+.navbar li a
+{
+    text-decoration: none;
+    color: white;
+    font-family: Kanit;
+    font-size: 1.2rem;
+
+}
+
+.navbar li a:hover {
+    font-size: px;
+    color: #fff;
+    text-align: center;
+    animation: glow 0.65s ease-in-out  infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, ;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6;
+    }
+}
+.navbar
+{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+ 
+}
