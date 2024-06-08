@@ -64,10 +64,11 @@ margin-top: 12.5px;
     top: 0;
     left: 0;
     width:100vw;
-    height:80vh; 
+    height:100vh; 
     background-image: url("bg.jpg");
     background-size: cover;
     background-position: fixed;
+ 
     animation: animateBg 10s linear infinite;
     position: fixed;
     z-index: -1;
@@ -82,7 +83,9 @@ margin-top: 12.5px;
     overflow: hidden;
     width:100vw;
     height:80vh;
+   
 }
+
 
 @keyframes animateBg {
 
@@ -216,63 +219,101 @@ span:nth-child(10) {
     animation-duration: 2.75s;
 }
 
-
-    h1{
-        text-align: center;
- 
-    /* position: absolute; */
-    font-size: 7.5rem;
-    color: rgb(247, 247, 255);
-    text-shadow: 5px 5px rgb(195, 183, 183);
-    background-color: transparent;
-     
-    }
-    
-
-
-    
-
-
-
-
 .head { 
-   
+  
    padding-top: 200px;
+   font-size: 7.5rem;
+   color: rgb(255, 255, 255);
+   text-shadow: 5px 5px rgb(195, 183, 183);
+   background-color: transparent;
     z-index: 0;
      /* z-index: -3; */
-    color: white;
+    color: rgb(255, 255, 255);
     letter-spacing: 4px;
-    font-family:'Times New Roman', Times, serif ;
-    /* border-right: solid; */
+    font-family: "Tiro Devanagari Hindi", serif;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 10s  ;
+    animation: typing 8s  ;
     cursor:4s step-end infinite alternate;    
 }
 
-
+.engl
+{  
+    color: #ffffff;
+    animation: fadein 12s ;
+    font-size: 2rem;
+    margin-bottom: 17px;
+    height: 80px;
+    padding: 2px;
  
+
+}
+.script
+{   margin-top: 3px;
+    height: 300px;
+    width: 300px;
+    color: #ffffff;
+    text-align: center;
+    display: contents;
+    font-family: "Tiro Devanagari Hindi", serif;   
+}
+
+@keyframes fadein2
+
+{
+    0%
+    {
+     opacity: 0;
+    }
+    80%
+    {
+     opacity: 1;
+   
+    }
+    
+ }
+.verse
+{
+    font-size: 1.2rem;
+    animation: fadein2 10s;
+}
+
+
+@keyframes fadein
+{
+   0%
+   { font-size: 1rem;
+    opacity: 0;
+   }
+   100%
+   {
+    opacity: 1;
+    font-size: 2rem;
+   }
+   
+}
+
 @keyframes cursor{
     50%{ border-color: transparent}
 }
 @keyframes typing {
-    from{ width: 0}
+    from{ width: 0
+    }
 }
  
  .hero 
 {   height: 100vh; 
+    width: 100%;
     text-align: center;
-    border: 2px solid red;
   
    
-
 } 
 
 .text
 {   
-    color: #1c1717;
+    color: #ffffff;
     height: 1000px;
     width: 100%;
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
 }
