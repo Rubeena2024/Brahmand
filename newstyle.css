@@ -920,14 +920,16 @@ transform: rotate(360deg) translate(175px) rotate(360deg);
 
   #accordion
   {
-    margin: 100px auto;
-    width: 600px;
+    margin: 50px auto;
+    width: 700px;
   }
 
   #accordion li{
     list-style: none;
     width: 100%;
     margin-bottom: 10px;
+     background: transparent;
+   backdrop-filter: blur(2px); 
     background: #fff;
     padding: 10px;
     border-radius: 4px;
@@ -938,16 +940,18 @@ transform: rotate(360deg) translate(175px) rotate(360deg);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+     text-shadow:1px 1.1px #999;
     font-weight: 500;
     cursor: pointer;
-    color: rgb(10, 17, 80);
+    color: rgb(255,255,255);
   }
 
   #accordion li label span
   {
+    z-index:1;
     transform: rotate(90deg);
-    font-size: 22px;
+    font-size: 34px;
     color: #000000 ;
 
   }
@@ -959,11 +963,15 @@ transform: rotate(360deg) translate(175px) rotate(360deg);
 
   #accordion .contentofstar
   {
+    font-size: 20px;
+    box-shadow: 2px 2px white;
+    transition: border 0.3s;
     padding: 0 10px;
     line-height: 26px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.6s;
+    color: white;
   }
 
 
