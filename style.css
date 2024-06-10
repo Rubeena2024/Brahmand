@@ -42,7 +42,7 @@ margin-top: 12.5px;
     }
 }
 .navbar
-{
+{ z-index: 2;
     width: 100%;
     height: 50px;
     background-color: black;
@@ -50,6 +50,7 @@ margin-top: 12.5px;
    
  
 }
+
 
 /* * {
     margin: 0;
@@ -118,7 +119,7 @@ span::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 300px;
+    width:300px;
     height: 1px;
     background: linear-gradient(90deg, #fff, transparent);
 }
@@ -230,7 +231,7 @@ span:nth-child(10) {
      /* z-index: -3; */
     color: rgb(255, 255, 255);
     letter-spacing: 4px;
-    font-family: "Tiro Devanagari Hindi", serif;
+    font-family: "Tiro Devanagari Hindi", serif, ;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -256,7 +257,7 @@ span:nth-child(10) {
     color: #ffffff;
     text-align: center;
     display: contents;
-    font-family: "Tiro Devanagari Hindi", serif;   
+    font-family: "Tiro Devanagari Hindi", tahoma;   
 }
 
 @keyframes fadein2
@@ -310,15 +311,10 @@ span:nth-child(10) {
    
 } 
 
-.text
-{   
-    color: #ffffff;
-    height: 1000px;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-}
+
 
 .timeline {
+    
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -481,24 +477,11 @@ span:nth-child(10) {
     font-family: Cardo;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#SOLARSYSTEM
-{ background-image: url('solarbg.jpg');
+  #SOLARSYSTEM
+  
+{ 
+  
+  background-image: url('solarbg2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -510,6 +493,7 @@ span:nth-child(10) {
 
 .wrapper {
   padding-top: 20px;
+  bottom: 10vh;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -760,11 +744,407 @@ transform: rotate(360deg) translate(175px) rotate(360deg);
   100% {
   transform: rotate(360deg) translate(125px) rotate(360deg);
       }
+    }
+    .spaceexp{
+     
+      /* margin-top:0;
+      /* position:; */
+       display:flex; 
+      background: cover;
+      background:url(spacexp.jpg);
+      opacity: 45px;
+      background-color: aliceblue;
+      height: 130vh;
+    }
+    .heading2{
+
+      font-family: serif;
+      padding:35px;
+      margin-top:15vh;
+      margin-bottom: 14vh;
+      margin-left: 25vw;
+      font-size: 48px;
+      color: white;
+    }     
+
+    /* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.spaceexploration {
+  z-index: 3;
+  top: 35vh;
+  bottom: 24vh;
+  left: 35vw;
+  height: 148vh;
+  display: absolute;
+  align-items: center;
+  justify-content: center;
+  background:url(spacexp.jpg);
+}
+::-webkit-scrollbar {
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb {
+  background: #fcfdff;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #eaeef2;
+}
+.container2 {
+  z-index: 3;
+  margin: 70 70 70 70;
+  display: flex;
+  gap: 12px;
+  max-width: 1500px;
+  height: 500px;
+  width: 100%;
+  background: transparent;
+  border-radius: 12px;
+  padding: 68px;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-padding: 30px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.container2 .card {
+ 
+  
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 12px;
+  background: transparent;
+  scroll-snap-align: start;
+  box-shadow: 26px 15px 25px 15px rgb(0, 0, 0);
+  box-shadow: 30px white;
+}
+.card .image {
+  height: 150px;
+  width: 150px;
+  padding: 4px;
+  background: #000000;
+  border-radius: 50%;
+}
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.card h2 {
+  text-shadow: 3px 3px rgb(0, 0, 0);
+  margin-top: 25px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+}
+.card p {
+  text-shadow: 2px 2px rgb(26, 5, 5);
+  margin-top: 4px;
+  font-size: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
+.heading3{
+  /* z-index: 3; */
+  margin-top:  16vh;
+  margin-left:35vh;
+
+  padding: 7vh;
+  text-shadow: 3px 3px rgb(145, 145, 145);
+  font-size:48px;
+  color: white;
+  font-family: serif;
+  position: relative;
+  
+ }
+.spacetrav{
+  
+  
+  top: 25vh;
+  height: 170vh;
+
+  background-image: url(spacetravellerbg.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.astro-1, .astro-2{
+  z-index:2;
+  position:relative;
+  size: 53px;
+}
+
+.astro-1{
+  left: 52%;
+   top: 60%;
+  animation-name:astro1 ;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.astro-2{
+ left: 42%;
+   top: 30%;
+ animation-name: astro2;
+ animation-duration: 10s;
+ animation-iteration-count: infinite;
+
+}
+
+
+@keyframes astro1{
+  0%{
+    left:0 ;
+    top: 0;
+  }
+
+  20%{
+    left: 20%;
+    top: 10%;
+  }
+
+  40%{
+   left: 40%;
+   top: 0;
+  }
+
+  60%{
+   left:60%;
+   top: 20%;
+  }
+
+  80%{
+    left: 80%;
+    top: 0;
+  }
+
+  100%{
+    left: 100%;
+    top: 30%;
+  }
+}
+
+
+
+@keyframes astro2{
+  0%{
+   top: 60%;
+  }
+
+  50%{
+   top:45% ;
+  }
+
+  100%{
+   top: 60%;
+  }
+}
+
+/* space travellers cards */
+.cardanim{
+  /* z-index: 2; */
+  display: flex;
+  justify-content: center;
+  height: 130vh;
+  align-items: center;
+  /* background: whitesmoke; */
+  /* width: fit-content; */
+}
+.stcontainer{
+  display: flex;
+}
+
+ .rs{
+  height: 500px;
+  width: 350px;
+  border-radius: 3px;
+ }
+ .kc{
+  height: 500px;
+  width: 350px;
+  border-radius: 3px;}
+  .sw{
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;}
+.stcard{
+  height: 800px;
+  margin: 50px;
+  box-shadow: 5px 5px 7px black;
+  overflow: hidden;
+}
+.intro{
+  height: 70px;
+  width: 350px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 70px;
+ 
+  background: rgb(27,27,27,.5);
+  color: white;
+  transition: 0.5s;
+
+}
+#s1{
+  margin: 10px;
+  font-size: 40px;
+}
+.p1{
+  font-size: 20px;
+  margin: 20px;
+  
+  /* visibility: hidden;
+  opacity: 0; 
+  */
+}
+.stcard:hover{
+  cursor:pointer;
+
+}
+.stcard:hover.intro{
+  height: 70px;
+  bottom: 240px;
+  background: black;
+}
+.stcard:hover.p1{
+  
+  visibility: visible;
+  opacity: 1;
+}
+.stcard:hover img{
+  transform: scale(1.1) rotate(-3deg);
+}
+/* stars page css */
+   
+#STARS
+   {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
    }
-                     
+
+   .starheading
+   {
+    color: transparent;
+    font-weight: 900;
+    font-size: 14em;
+    -webkit-text-stroke: 2px #fff ;
+
+   }
+
+   #STARS .starry
+   {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: animatestar 8s ease-in-out infinite,
+               bgmove 16s linear infinite;
+
+
+   }
+
+   #STARS .starry.star1
+   { animation-delay: 0s;
+    background: url('star1.png');
+   }
+   
+   #STARS .starry.star2
+   { animation-delay: -1s;
+    background: url('star2.png');
+   }
+
+   #STARS .starry.star3
+   { animation-delay: -s;
+    background: url('star3.png');
+   }
+
+   #STARS .starry.star4
+   { animation-delay: -3s;
+    background: url('star4.png');
+   }
+
+   #STARS .starry.star5
+   { animation-delay: -4s;
+    background: url('star5.png');
+   }
+
+
+   #STARS .starry.star6
+   { animation-delay: -5s;
+    background: url('star6.png');
+   }
+
+
+   #STARS .starry.star7
+   { animation-delay: -6s;
+    background: url('star7.png');
+   }
+
+
+   #STARS .starry.star8
+   { animation-delay: -7s;
+    background: url('star8.png');
+   }
 
 
 
+
+
+   @keyframes animatestar
+   {
+    0%,20%,40%,60%,80%,100%
+    {
+        opacity: 0;
+    }
+
+    10%, 30%, 50%, 70%, 90%
+    {
+      opacity: 1;
+    }
+   }
+
+   @keyframes bgmove
+   {
+    0%
+    {
+      transform: scale(1);
+    }
+    100%
+    {
+      transform: scale(2);
+    }
+   }
+
+   
    
 
 
