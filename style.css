@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-@font-face { font-family: Angora; src: url('Angora Fonts/Angora.otf' ); } 
+@font-face { font-family: Angora; src: url('Angora Font/Angora.otf' ); } 
 h1 {
    font-family: Angora
 }
